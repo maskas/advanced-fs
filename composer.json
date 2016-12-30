@@ -2,7 +2,7 @@
   "name": "mangirdas/file-system",
   "version": "1.00",
   "autoload": {
-    "psr-4": {"Fs\\": "/"}
+    "psr-4": {"\\": "/"}
   },
   "minimum-stability": "stable",
   "license": [
