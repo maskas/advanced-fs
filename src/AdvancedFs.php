@@ -12,6 +12,7 @@ class AdvancedFs
         $path = self::removeTrailingSlash($path);
         if (!is_dir($path)) {
             self::createPath(dirname($path));
+            mkdir($path);
         }
     }
 

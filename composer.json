@@ -2,7 +2,12 @@
   "name": "mangirdas/file-system",
   "version": "1.00",
   "autoload": {
-    "psr-4": {"\\": "/src/"}
+    "psr-4": {
+      "\\AdvancedFs\\": "/src/AdvancedFs"
+    },
+    "classmap": [
+      "src/AdvancedFs.php"
+    ]
   },
   "require-dev": {
     "phpunit/phpunit": "5.5.*"
