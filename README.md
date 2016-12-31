@@ -13,4 +13,5 @@ Add the following to your composer.json file
 ## Run tests
 
 vendor/bin/phpunit --bootstrap tests/bootstrap.php tests
+
 (works only on Linux)
