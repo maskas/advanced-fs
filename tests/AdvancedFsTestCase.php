@@ -22,10 +22,4 @@ class AdvancedFsTestCase extends TestCase
     public function mockDir (){
         return $this->mockDir;
     }
-
-//    protected function tearDown() {
-//        $mockDir = self::MOCKDIR;
-//        `rm -rf $mockDir`;
-//    }
-
 }
