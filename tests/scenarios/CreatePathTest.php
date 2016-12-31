@@ -4,23 +4,22 @@ class CreatePathTest extends AdvancedFsTestCase
 {
     public function testOneLevel()
     {
-        $dir = $this->mockDir() . '/firstdir';
-        AdvancedFs::createPath($dir);
-
-        $this->assertEquals(true, is_dir($dir));
+        $path = $this->mockDir() . '/firstdir';
+        AdvancedFs::createPath($path);
+        $this->assertEquals(true, is_dir($path));
     }
 
     public function testMultipleLevels()
     {
-        $dir = $this->mockDir() . '/dir1/dir2/dir3';
-        AdvancedFs::createPath($dir);
-        $this->assertEquals(true, is_dir($dir));
+        $path = $this->mockDir() . '/dir1/dir2/dir3';
+        AdvancedFs::createPath($path);
+        $this->assertEquals(true, is_dir($path));
     }
 
     public function testAdditionalSlash()
     {
-        $dir = $this->mockDir() . '/somedir/domeotherdir/';
-        AdvancedFs::createPath($dir);
-        $this->assertEquals(true, is_dir($dir));
+        $path = $this->mockDir() . '/somedir/domeotherdir/';
+        AdvancedFs::createPath($path);
+        $this->assertEquals(true, is_dir($path));
     }
 }
