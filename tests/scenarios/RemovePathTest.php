@@ -2,7 +2,7 @@
 
 class RemovePathTest extends AdvancedFsTestCase
 {
-    public function testOneLevel()
+    public function testDirIsReallyRemoved()
     {
         $path = $this->mockDir() . '/newdir1';
         $this->createSomeFiles($path);
@@ -13,10 +13,10 @@ class RemovePathTest extends AdvancedFsTestCase
     private function createSomeFiles($path)
     {
         mkdir($path);
-        file_put_contents($path . '/somefile.txt', $path);
-        file_put_contents($path . '/.somehiddenfile', $path);
+        file_put_contents($path . '/somefile.txt', 'lalala');
+        file_put_contents($path . '/.somehiddenfile', 'blablabla');
         mkdir($path . '/subdir');
-        file_put_contents($path . '/subdir/somefile.txt', $path);
-        file_put_contents($path . '/subdir/.somehiddenfile', $path);
+        file_put_contents($path . '/subdir/somefile.txt', 'lululu');
+        file_put_contents($path . '/subdir/.somehiddenfile', 'tututu');
     }
 }

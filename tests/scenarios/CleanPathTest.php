@@ -2,7 +2,7 @@
 
 class CleanPathTest extends AdvancedFsTestCase
 {
-    public function testOneLevel()
+    public function testDirStaysIntact()
     {
         $path = $this->mockDir() . '/path-to-clean';
         $this->createSomeFiles($path);
@@ -23,10 +23,10 @@ class CleanPathTest extends AdvancedFsTestCase
     private function createSomeFiles($path)
     {
         mkdir($path);
-        file_put_contents($path . '/somefile.txt', $path);
-        file_put_contents($path . '/.somehiddenfile', $path);
+        file_put_contents($path . '/somefile.txt', 'lalala');
+        file_put_contents($path . '/.somehiddenfile', 'blablabla');
         mkdir($path . '/subdir');
-        file_put_contents($path . '/subdir/somefile.txt', $path);
-        file_put_contents($path . '/subdir/.somehiddenfile', $path);
+        file_put_contents($path . '/subdir/somefile.txt', 'lululu');
+        file_put_contents($path . '/subdir/.somehiddenfile', 'tututu');
     }
 }
