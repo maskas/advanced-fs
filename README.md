@@ -5,10 +5,11 @@ Advanced file-system operations. For those who want a native php implementation 
 
 Add the following to your composer.json file
 
-"require": {
+```"require": {
   "mangirdas/file-system": "*"
 },
 ...
+```
 
 ## Run tests
 
