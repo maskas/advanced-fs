@@ -11,9 +11,12 @@ class AdvancedFsTestCase extends TestCase
         mkdir($mockRoot);
     }
 
-    protected function setUp() {
+    protected function setUp()
+    {
         $this->mockDir = self::MOCK_DIR_ROOT . '/' . time();
-        mkdir($this->mockDir);
+        if (!is_dir($this->mockDir)) {
+            mkdir($this->mockDir);
+        }
     }
 
     public function mockDir (){
