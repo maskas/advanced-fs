@@ -1,6 +1,6 @@
 <?php
 
-class CreateWritableDirTest extends AdvancedFsTestCase
+class CreatePathTest extends AdvancedFsTestCase
 {
     public function testOneLevel()
     {
