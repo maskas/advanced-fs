@@ -1,5 +1,5 @@
 {
-  "name": "mangirdas/file-system",
+  "name": "mangirdas/advanced-fs",
   "description": "Advanced file-system operations. For those who want a native php implementation of `rm -rf`, etc.",
   "autoload": {
     "psr-4": {
