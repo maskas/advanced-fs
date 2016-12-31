@@ -1,7 +1,6 @@
 {
   "name": "mangirdas/file-system",
   "description": "Advanced file-system operations. For those who want a native php implementation of `rm -rf`, etc.",
-  "version": "1.00",
   "autoload": {
     "psr-4": {
       "\\AdvancedFs\\": "/src/AdvancedFs"
