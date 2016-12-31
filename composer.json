@@ -3,7 +3,7 @@
   "description": "Advanced file-system operations. For those who want a native php implementation of `rm -rf`, etc.",
   "autoload": {
     "psr-4": {
-      "\\AdvancedFs\\": "/src/AdvancedFs/"
+      "AdvancedFs\\": "src/AdvancedFs/"
     },
     "classmap": [
       "src/AdvancedFs.php"

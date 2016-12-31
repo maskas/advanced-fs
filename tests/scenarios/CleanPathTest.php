@@ -20,6 +20,12 @@ class CleanPathTest extends AdvancedFsTestCase
         $this->assertEmpty($realFiles);
     }
 
+    public function testExceptionOnNonExistingPath()
+    {
+        $this->expectException(AdvancedFs\PathNotFoundException::class);
+        AdvancedFs::cleanPath($this->mockDir() . '/path-that-does-not-exist');
+    }
+
     private function createSomeFiles($path)
     {
         mkdir($path);
